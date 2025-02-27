@@ -23,7 +23,7 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка активности кнопки Online banking")
-    public void OnlineBankingIsActive() {
+    public void onlineBankingIsActive() {
         Assertions.assertTrue(AmeriabankP.getOnlineBankingIsActive(), "Online banking кнопка не активна");
     }
 
