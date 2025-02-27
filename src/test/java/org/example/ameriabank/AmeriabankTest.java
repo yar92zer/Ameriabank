@@ -155,6 +155,5 @@ public class AmeriabankTest extends BaseTest {
         String expectedUrl = "https://ameriabank.am/en/personal/saving";
         String actualUrl = AmeriabankP.savingsButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
-
     }
 }
