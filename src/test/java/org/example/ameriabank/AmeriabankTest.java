@@ -29,91 +29,91 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка активности кнопки Learn more")
-    public void LearnMoreIsActive() {
+    public void learnMoreIsActive() {
         Assertions.assertTrue(AmeriabankP.getLearnMoreIsActive(), "Learn more кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Learn more")
-    public void LearnMore2IsActive() {
+    public void learnMore2IsActive() {
         Assertions.assertTrue(AmeriabankP.getLearnMore2IsActive(), "Learn more 2 кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Cards")
-    public void CardsIsActive() {
+    public void cardsIsActive() {
         Assertions.assertTrue(AmeriabankP.getCardsIsActive(), "Cards кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Transfers")
-    public void TransfersIsActive() {
+    public void transfersIsActive() {
         Assertions.assertTrue(AmeriabankP.getTransfersIsActive(), "Transfers кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Online loan")
-    public void OnlineLoanIsActive() {
+    public void onlineLoanIsActive() {
         Assertions.assertTrue(AmeriabankP.getApplyOnlineIsActive(), "Online loan кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Distance banking")
-    public void DistanceBankingIsActive() {
+    public void distanceBankingIsActive() {
         Assertions.assertTrue(AmeriabankP.getDistanceBankingIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Savings")
-    public void SavingsIsActive() {
+    public void savingsIsActive() {
         Assertions.assertTrue(AmeriabankP.getSavingsIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Apply online")
-    public void ApplyOnlineIsActive() {
+    public void applyOnlineIsActive() {
         Assertions.assertTrue(AmeriabankP.getApplyOnlineIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Learn more 3")
-    public void LearnMore3IsActive() {
+    public void learnMore3IsActive() {
         Assertions.assertTrue(AmeriabankP.getLearnMore3IsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Learn more 4")
-    public void LearnMore4IsActive() {
+    public void learnMore4IsActive() {
         Assertions.assertTrue(AmeriabankP.getLearnMore4IsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки exchange Rate")
-    public void ExchangeRateIsActive() {
+    public void exchangeRateIsActive() {
         Assertions.assertTrue(AmeriabankP.getExchangeRateIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки EXCHANGE")
-    public void ExchangeIsActive() {
+    public void exchangeIsActive() {
         Assertions.assertTrue(AmeriabankP.getExchangeButtonIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки GOLD")
-    public void GoldIsActive() {
+    public void goldIsActive() {
         Assertions.assertTrue(AmeriabankP.getGoldIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки CASH")
-    public void CashIsActive() {
+    public void cashIsActive() {
         Assertions.assertTrue(AmeriabankP.getCashIsActive());
     }
 
     @Test
     @DisplayName("Проверка активности кнопки NON-CASH")
-    public void NonCashIsActive() {
+    public void nonCashIsActive() {
         Assertions.assertTrue(AmeriabankP.getNonCashIsActive());
     }
 
@@ -127,7 +127,7 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Открытие страницы Transfers")
-    public void TransfersTest() {
+    public void transfersTest() {
         String expectedUrl = "https://ameriabank.am/en/personal/accounts";
         String actualUrl = AmeriabankP.transfersButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
@@ -135,7 +135,7 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Открытие страницы Online loan")
-    public void OnlineLoanTest() {
+    public void onlineLoanTest() {
         String expectedUrl = "https://ameriabank.am/en/personal/loans";
         String actualUrl = AmeriabankP.onlineLoanButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
@@ -143,7 +143,7 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Открытие страницы Distance banking")
-    public void DistanceBankingTest() {
+    public void distanceBankingTest() {
         String expectedUrl = "https://ameriabank.am/en/personal/accounts/accounts-management/myameria";
         String actualUrl = AmeriabankP.distanceBankingButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
@@ -151,9 +151,9 @@ public class AmeriabankTest extends BaseTest {
 
     @Test
     @DisplayName("Открытие страницы Distance banking")
-    public void SavingsTest2() {
+    public void savingsTest2() {
         String expectedUrl = "https://ameriabank.am/en/personal/saving";
-        String actualUrl = AmeriabankP.SavingsButtonTransition();
+        String actualUrl = AmeriabankP.savingsButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
 
     }
