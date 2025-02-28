@@ -1,10 +1,10 @@
-package org.example.ameriabank;
+package ameriabank.at;
 
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
 
 public class AllureLoggerCustom {
-    private Logger logger;
+    private final Logger logger;
 
     public AllureLoggerCustom(org.slf4j.Logger logger) {
         this.logger = logger;

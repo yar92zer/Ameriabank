@@ -1,4 +1,4 @@
-package org.example.ameriabank;
+package ameriabank.at.am.tests;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.slf4j.LoggerFactory;
+import ameriabank.at.AllureLoggerCustom;
 
 import java.time.Duration;
 

@@ -1,5 +1,6 @@
-package org.example.ameriabank;
+package ameriabank.at.pages;
 
+import ameriabank.at.AllureLoggerCustom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
