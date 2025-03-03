@@ -1,4 +1,4 @@
-package org.example.ameriabank;
+package ameriabank.at;
 
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;

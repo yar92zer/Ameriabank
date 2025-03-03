@@ -1,5 +1,6 @@
-package org.example.ameriabank;
+package ameriabank.at.pages;
 
+import ameriabank.at.AllureLoggerCustom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,6 @@ public class AmeriabankPage {
 
     private final AllureLoggerCustom LOG = new AllureLoggerCustom(LoggerFactory.getLogger(AmeriabankPage.class));
     WebDriver driver;
-
 
     @FindBy(xpath = "//div[@id='banking-dropdown__button']")
     private WebElement OnlineBankingButton;
@@ -65,7 +65,6 @@ public class AmeriabankPage {
 
     @FindBy(xpath = "//label[normalize-space()='non-cash']")
     private WebElement nonCashButton;
-
 
     public boolean getOnlineBankingIsActive() {
         LOG.info("Проверка доступности кнопки 'Home'");
@@ -176,13 +175,12 @@ public class AmeriabankPage {
         return driver.getCurrentUrl();
     }
 
-    public String SavingsButtonTransition() {
+    public String savingsButtonTransition() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("animsition-loading")));
         savingsButton.click();
         return driver.getCurrentUrl();
     }
-
 
     public AmeriabankPage(WebDriver driver) {
         this.driver = driver;
