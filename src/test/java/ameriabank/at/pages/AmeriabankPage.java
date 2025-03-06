@@ -48,7 +48,7 @@ public class AmeriabankPage {
     @FindBy(xpath = "//a[@class='button button_secondary']")
     private WebElement learnMore3Button;
 
-    @FindBy(xpath = "//a[@class='button button_secondary campaign1']")
+    @FindBy(xpath = "//a[@href='https://ameriabank.am/campaigns/month-presents'][normalize-space()='Learn more']")
     private WebElement learnMore4Button;
 
     @FindBy(xpath = "//a[normalize-space()='the exchange rate for currency and gold']")
@@ -155,6 +155,7 @@ public class AmeriabankPage {
     }
 
     public String transfersButtonTransition() {
+        LOG.info("Переход на страницу 'Transfers'");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("animsition-loading")));
         transfersButton.click();
@@ -162,6 +163,7 @@ public class AmeriabankPage {
     }
 
     public String onlineLoanButtonTransition() {
+        LOG.info("Переход на страницу 'Online loan'");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("animsition-loading")));
         onlineLoanButton.click();
@@ -169,6 +171,7 @@ public class AmeriabankPage {
     }
 
     public String distanceBankingButtonTransition() {
+        LOG.info("Переход на страницу'Distance banking'");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("animsition-loading")));
         distanceBankingButton.click();
@@ -176,6 +179,7 @@ public class AmeriabankPage {
     }
 
     public String savingsButtonTransition() {
+        LOG.info("Переход на страницу'Savings'");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("animsition-loading")));
         savingsButton.click();
